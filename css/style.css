@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.product {
+  margin: 50px auto !important;
+}
+.product .content {
+  border: 1px solid hsl(30, 38%, 92%);
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.product .content .appear {
+  max-width: 100%;
+  width: 350px;
+  transition: 0.3s;
+}
+.product .content .appear:hover {
+  transform: scale(1.1);
+}
+.product .content .hide {
+  display: none;
+  max-width: 100%;
+  width: 350px;
+}
+.product .content .info {
+  background-color: hsl(0, 0%, 100%);
+  width: 350px;
+  padding: 30px;
+  overflow: hidden;
+  position: relative;
+}
+.product .content .info .title {
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+.product .content .info h3 {
+  font-size: 38px;
+  padding: 16px 0;
+}
+.product .content .info .text {
+  color: hsl(228, 12%, 48%);
+  font-size: 16px;
+  line-height: 1.7;
+  padding: 10px 0;
+}
+.product .content .info .price {
+  padding: 10px 0;
+}
+.product .content .info .price .num {
+  color: hsl(158, 36%, 37%);
+  font-size: 29px;
+  font-weight: bold;
+  font-family: "Fraunces", serif;
+}
+.product .content .info .price span:last-child {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-size: 16px;
+  margin-left: 6px;
+}
+.product .content .info .btn {
+  border: 1px solid hsl(158, 36%, 37%);
+  padding: 15px 0;
+  display: block;
+  background-color: hsl(158, 36%, 37%);
+  text-align: center;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  margin: 24px 0 0;
+  transition: 0.3s;
+}
+.product .content .info .btn:hover {
+  background-color: hsl(158, 36%, 20%);
+}
+.product .content .info .btn .icon {
+  color: hsl(0, 0%, 100%);
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .product .content {
+    flex-direction: column;
+  }
+  .product .content .appear {
+    display: none;
+  }
+  .product .content .hide {
+    display: block;
+  }
+  .product .content .info h3 {
+    padding: 10px 0;
+    font-size: 29px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
